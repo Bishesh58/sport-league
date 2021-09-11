@@ -58,7 +58,8 @@ namespace esport_leauge
                 eventDetails += "Event Date: " + drEvent["EventDate"] + "\r\n\r\n";
                 eventDetails +="Challenges:" + "\r\n\r\n";
 
-                txtReport.Text += eventDetails;
+                eventDetails += "ID\t\t" + "Name\t\t\t" + "Time\t\t\r\n";
+
                 //get challenges
                 int aChallengeID = Convert.ToInt32(drEvent["EventID"].ToString());
                 cmChallenge.Position = DM.ChallengeView.Find(aChallengeID);
@@ -69,22 +70,18 @@ namespace esport_leauge
                 
                 if(drChallenges.Length > 0)
                 {
-                    //loop for each challenge
-                    string challengeDetails = "";
-                    challengeDetails = "ID\t\t" + "Name\t\t\t" + "Time\t" + "\r\n\r\n";
-                    eventDetails += challengeDetails;
                     foreach (DataRow drEventChallenge in drChallenges)
                     {
                         int chID = Convert.ToInt32(drEventChallenge["ChallengeID"].ToString());
                         cmChallenge.Position = DM.ChallengeView.Find(chID);
                         DataRow drchallenge = DM.dtChallenge.Rows[cmChallenge.Position];
 
-                        eventDetails += "" + drchallenge["ChallengeID"] + "\t\t" + drchallenge["ChallengeName"] + "\t\t" + drchallenge["StartTime"] + "\r\n\r\n\r\n";
+                        eventDetails += "" + drchallenge["ChallengeID"] + "\t\t" + drchallenge["ChallengeName"] + "\t\t" + drchallenge["StartTime"] + "\r\n";
                        
                     }
                     txtReport.Text += eventDetails;
                 }
-                txtReport.Text += "\r\n\r\n\r\n\r\n";
+               txtReport.Text += "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
 
             }
 

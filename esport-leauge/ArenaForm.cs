@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace esport_leauge
 {
@@ -15,6 +16,7 @@ namespace esport_leauge
         private DataModule DM;
         private MainForm Mf;
         CurrencyManager currencyManager;
+       
         public ArenaForm(DataModule dm, MainForm mn)
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace esport_leauge
             Mf = mn;
             BindControls();
         }
+        //bind controls
         public void BindControls()
         {
             txtArenaID.DataBindings.Add("Text", DM.DSnzesl, "Arena.ArenaID");
@@ -37,135 +40,36 @@ namespace esport_leauge
             currencyManager = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Arena"];
 
         }
-
-
+        //form load
+        private void ArenaForm_Load(object sender, EventArgs e)
+        {
+            ReadWriteClass.SetReadonlyControls(grpArena.Controls);
+        }
+        //btn previous
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             Navigate.prev(currencyManager);
         }
-
+        //btn next
         private void btnNext_Click(object sender, EventArgs e)
         {
             Navigate.next(currencyManager);
         }
-
-        private bool isAdding = false;
-        private bool isUpdating = false;
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            Navigate.saveBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
-            //save button to handle different methods
-            if (isAdding == true)
-            {
-                handleAddData();
-            }
-            else
-            {
-                handleUpdateData();
-            }
-
-            //make controls readonly
-            ReadWriteClass.SetReadonlyControls(grpArena.Controls);
-
-        }
-        public void handleAddData()
-        {
-            try
-            {
-                if ((txtArenaName.Text == "") || (txtStreetAddress.Text == "") || (txtSuburb.Text == "") ||
-                               (cboTxtCity.Text == "") || (txtPhoneNumber.Text == ""))
-                {
-                    MessageBox.Show("You must type in a all fields", "Error");
-                    currencyManager.CancelCurrentEdit();
-                }
-                else
-                {
-                    DataRow newArenaRow = DM.dtArena.NewRow();
-                    newArenaRow["ArenaName"] = txtArenaName.Text;
-                    newArenaRow["StreetAddress"] = txtStreetAddress.Text;
-                    newArenaRow["Suburb"] = txtSuburb.Text;
-                    newArenaRow["City"] = cboTxtCity.Text;
-                    newArenaRow["PhoneNumber"] = txtPhoneNumber.Text;
-
-                    DM.dtArena.Rows.Add(newArenaRow);
-                    MessageBox.Show("Arena added successfully", "Success");
-                    DM.updateArena();
-                    ReadWriteClass.SetReadonlyControls(grpArena.Controls);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-
-
-        }
-
-
-        public void handleUpdateData()
-        {
-      
-            try
-            {
-                if ((txtArenaName.Text == "") || (txtStreetAddress.Text == "") || (txtSuburb.Text == "") ||
-                               (cboTxtCity.Text == "") || (txtPhoneNumber.Text == ""))
-                {
-                    MessageBox.Show("You must enter a value for each of the text fields", "Error");
-                    currencyManager.CancelCurrentEdit();
-                }
-                else
-                {
-                   
-                    DataRow updateArenaRow = DM.dtArena.Rows[currencyManager.Position];
-                    updateArenaRow["ArenaName"] = txtArenaName.Text;
-                    updateArenaRow["StreetAddress"] = txtStreetAddress.Text;
-                    updateArenaRow["Suburb"] = txtSuburb.Text;
-                    updateArenaRow["City"] = cboTxtCity.Text;
-                    updateArenaRow["PhoneNumber"] = txtPhoneNumber.Text;
-
-                    currencyManager.EndCurrentEdit();
-                    DM.updateArena();
-                    MessageBox.Show("Arena updated successfully", "Success");
-                    ReadWriteClass.SetReadonlyControls(grpArena.Controls);
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-
-
-        }
-
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Navigate.cancelBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
-            ReadWriteClass.SetReadonlyControls(grpArena.Controls);
-        }
-
+        //btn add
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Navigate.addBtn(pnlList, btnUpdate, btnDelete, btnSave, btnCancel);
-            ReadWriteClass.SetEditControls(grpArena.Controls);
-            isAdding = true;
-            isUpdating = false;
-            btnSave.Text = "Save";
-            txtArenaID.Enabled = false;
+            Navigate.addBtn(pnlList, pnlAddArena, grpArena, btnUpdate, btnDelete, btnSaveChanges, btnCancelUpdate);
         }
-
+        //btn update
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Navigate.updateBtn(pnlList, btnAdd, btnDelete, btnSave, btnCancel);
+            Navigate.updateBtn(pnlList, btnAdd, btnDelete, btnSaveChanges, btnCancelUpdate);
             ReadWriteClass.SetEditControls(grpArena.Controls);
-            isUpdating = true;
-            isAdding = false;
-            btnSave.Text = "Save Change";
+           
             txtArenaID.Enabled = false;
         }
 
+        //btn delete
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DataRow deleteArenaRow = DM.dtArena.Rows[currencyManager.Position];
@@ -187,54 +91,192 @@ namespace esport_leauge
 
         }
 
-        private void ArenaForm_Load(object sender, EventArgs e)
+
+        //btn 'Save Arena' to save new data
+        private void btnSaveArena_Click(object sender, EventArgs e)
         {
+            Navigate.btnSave(pnlList, pnlAddArena, grpArena, btnUpdate, btnDelete, btnSaveChanges, btnCancelUpdate);
+            //regular expression for phone number 000-0000
+            Regex exp = new Regex(@"\d{3}-\d{4}");
+
+            if (exp.IsMatch(txtNewPhoneNumber.Text))
+            {
+                handleAddData();
+            }
+            else
+            {
+                MessageBox.Show("Invalid phone number, please enter like: 000-0000");
+                currencyManager.CancelCurrentEdit();
+            }
+           
+        }
+
+
+        //btn 'save changes' to update
+        private void btnSaveChanges_Click(object sender, EventArgs e)
+        {
+            Navigate.btnSaveChanges(pnlList, pnlAddArena, grpArena, btnAdd, btnUpdate, btnDelete, btnSaveChanges, btnCancelUpdate);
+
+            handleUpdateData();
+
+            //make controls readonly
             ReadWriteClass.SetReadonlyControls(grpArena.Controls);
         }
 
-        //handling phone number format & valid data
-        private void txtPhoneNumber_TextChanged(object sender, EventArgs e)
+        //method handleAddData
+        public void handleAddData()
         {
+            DataRow newArenaRow = DM.dtArena.NewRow();
             try
             {
-                string s = txtPhoneNumber.Text;
-                if (s.Length == 7)
+                if ((txtNewArenaName.Text == "") || (txtNewStreetAddress.Text == "") || (txtNewSuburb.Text == "") ||
+                               (cboNewTxtCity.Text == "") || (txtNewPhoneNumber.Text == ""))
                 {
-                    double sAsD = double.Parse(s);
-                    txtPhoneNumber.Text = string.Format("{0:###-####}", sAsD).ToString();
+                    MessageBox.Show("You must type in a all fields", "Error");
+                    currencyManager.CancelCurrentEdit();
                 }
-                if (txtPhoneNumber.Text.Length > 1)
+                else if (Int32.TryParse(txtNewArenaName.Text, out int val1))
                 {
-                    txtPhoneNumber.SelectionStart = txtPhoneNumber.Text.Length;
-                    txtPhoneNumber.SelectionLength = 0;
+                    MessageBox.Show("Numeric value is not allowed on Arena Name");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtNewStreetAddress.Text, out int val2))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Street Address");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtNewSuburb.Text, out int val3))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Suburb");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(cboNewTxtCity.Text, out int val4))
+                {
+                    MessageBox.Show("Numeric value is not allowed on City");
+                    currencyManager.CancelCurrentEdit();
+                }
+                
+                else
+                {
+                    newArenaRow["ArenaName"] = txtNewArenaName.Text;
+                    newArenaRow["StreetAddress"] = txtNewStreetAddress.Text;
+                    newArenaRow["Suburb"] = txtNewSuburb.Text;
+                    newArenaRow["City"] = cboNewTxtCity.Text;
+                    newArenaRow["PhoneNumber"] = txtNewPhoneNumber.Text;
+                    DM.dtArena.Rows.Add(newArenaRow);
+                    MessageBox.Show("Arena added successfully", "Success");
+                    DM.updateArena();
+                    ReadWriteClass.SetReadonlyControls(grpArena.Controls);
+                    clearField();
                 }
             }
-            catch (ArgumentException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Maximum numbers reached, enter valid number");
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("Please valid number only");
+                currencyManager.CancelCurrentEdit();
+                MessageBox.Show(ex.Message);
             }
 
-
+       
         }
 
+        //method handle updateData
+        public void handleUpdateData()
+        {
+            DataRow updateArenaRow = DM.dtArena.Rows[currencyManager.Position];
+
+            try
+            {
+                if ((txtArenaName.Text == "") || (txtStreetAddress.Text == "") || (txtSuburb.Text == "") ||
+                               (cboTxtCity.Text == "") || (txtPhoneNumber.Text == ""))
+                {
+                    MessageBox.Show("You must enter a value for each of the text fields", "Error");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtArenaName.Text, out int val1))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Arena Name");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtStreetAddress.Text, out int val2))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Street Address");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtSuburb.Text, out int val3))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Suburb");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(cboTxtCity.Text, out int val4))
+                {
+                    MessageBox.Show("Numeric value is not allowed on City");
+                    currencyManager.CancelCurrentEdit();
+                }
+            
+                else
+                {
+                    updateArenaRow["ArenaName"] = txtArenaName.Text;
+                    updateArenaRow["StreetAddress"] = txtStreetAddress.Text;
+                    updateArenaRow["Suburb"] = txtSuburb.Text;
+                    updateArenaRow["City"] = cboTxtCity.Text;
+                    updateArenaRow["PhoneNumber"] = txtPhoneNumber.Text;
+
+                    currencyManager.EndCurrentEdit();
+                    DM.updateArena();
+                    MessageBox.Show("Arena updated successfully", "Success");
+                    ReadWriteClass.SetReadonlyControls(grpArena.Controls);
+                }
+            }
+            catch (Exception ex)
+            {
+                currencyManager.CancelCurrentEdit();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        //btnCancel add
+        private void btnCancelAdd_Click(object sender, EventArgs e)
+        {
+            Navigate.btnCancelAdd(pnlList, pnlAddArena, grpArena, btnUpdate, btnDelete);
+            currencyManager.CancelCurrentEdit();
+            txtArenaID.Visible = true;
+            clearField();
+        }
+
+        //btnCancel update
+        private void btnCancelUpdate_Click(object sender, EventArgs e)
+        {
+            Navigate.btnCancelUpdate(pnlList, btnAdd, btnDelete, btnSaveChanges, btnCancelUpdate);
+            ReadWriteClass.SetReadonlyControls(grpArena.Controls);
+            currencyManager.CancelCurrentEdit();
+            txtArenaID.Visible = true;
+        }
+        //tooltip 1
         private void txtPhoneNumber_MouseHover(object sender, EventArgs e)
         {
-            toolTip1.SetToolTip(txtPhoneNumber, "only numbers allowed");
+            toolTip1.SetToolTip(txtPhoneNumber, "Enter number on 000-0000 format");
         }
-
-
-
-        /* //text num
-        private void txtPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
+        //tooltip 2
+        private void txtNewPhoneNumber_MouseHover(object sender, EventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            toolTip2.SetToolTip(txtNewPhoneNumber, "Enter number on 000-0000 format");
+        }
+        //
+        private string txtChangeValue;
+        private void txtArenaName_TextChanged(object sender, EventArgs e)
+        {
+            txtChangeValue = txtArenaName.Text;
         }
 
-        */
+        private void clearField()
+        {
+            txtNewArenaName.Text = "";
+            txtNewStreetAddress.Text = "";
+            txtNewSuburb.Text = "";
+            cboNewTxtCity.Text = "";
+            txtNewPhoneNumber.Text = "";
+        }
+
+       
     }
 }

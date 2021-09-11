@@ -25,6 +25,7 @@ namespace esport_leauge
             }
             foreach (TextBoxBase c in controlCollection.OfType<TextBoxBase>())
             {
+              
                 c.ReadOnly = true;
             }
             foreach (DateTimePicker c in controlCollection.OfType<DateTimePicker>())
@@ -57,6 +58,7 @@ namespace esport_leauge
             foreach (TextBoxBase c in controlCollection.OfType<TextBoxBase>())
             {
                 c.ReadOnly = false;
+
             }
             foreach (DateTimePicker c in controlCollection.OfType<DateTimePicker>())
             {

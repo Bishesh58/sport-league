@@ -48,9 +48,10 @@ namespace esport_leauge
             this.btnDisplayCompetitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDisplayCompetitor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisplayCompetitor.ForeColor = System.Drawing.Color.White;
-            this.btnDisplayCompetitor.Location = new System.Drawing.Point(451, 657);
+            this.btnDisplayCompetitor.Location = new System.Drawing.Point(338, 534);
+            this.btnDisplayCompetitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDisplayCompetitor.Name = "btnDisplayCompetitor";
-            this.btnDisplayCompetitor.Size = new System.Drawing.Size(270, 67);
+            this.btnDisplayCompetitor.Size = new System.Drawing.Size(202, 54);
             this.btnDisplayCompetitor.TabIndex = 39;
             this.btnDisplayCompetitor.Text = "Display Competitor Report";
             this.btnDisplayCompetitor.UseVisualStyleBackColor = false;
@@ -60,11 +61,12 @@ namespace esport_leauge
             // 
             this.txtReportComp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtReportComp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtReportComp.Location = new System.Drawing.Point(98, 100);
+            this.txtReportComp.Location = new System.Drawing.Point(74, 81);
+            this.txtReportComp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReportComp.Multiline = true;
             this.txtReportComp.Name = "txtReportComp";
             this.txtReportComp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReportComp.Size = new System.Drawing.Size(804, 518);
+            this.txtReportComp.Size = new System.Drawing.Size(603, 421);
             this.txtReportComp.TabIndex = 0;
             // 
             // panel1
@@ -72,9 +74,10 @@ namespace esport_leauge
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.txtReportComp);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(909, 639);
+            this.panel1.Size = new System.Drawing.Size(683, 520);
             this.panel1.TabIndex = 40;
             // 
             // btnPrint
@@ -86,13 +89,18 @@ namespace esport_leauge
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Location = new System.Drawing.Point(727, 657);
+            this.btnPrint.Location = new System.Drawing.Point(545, 534);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(189, 67);
+            this.btnPrint.Size = new System.Drawing.Size(142, 54);
             this.btnPrint.TabIndex = 41;
             this.btnPrint.Text = "Print competitor";
             this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // printDocument2
+            // 
+            this.printDocument2.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument2_PrintPage);
             // 
             // printPreviewDialog2
             // 
@@ -107,13 +115,14 @@ namespace esport_leauge
             // 
             // CompetitorReportForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 732);
+            this.ClientSize = new System.Drawing.Size(700, 595);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDisplayCompetitor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CompetitorReportForm";
             this.Text = "Competitor Report Maintenance";
             this.panel1.ResumeLayout(false);

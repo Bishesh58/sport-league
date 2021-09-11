@@ -58,7 +58,7 @@ namespace esport_leauge
         private bool isUpdating;
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Navigate.saveBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
+            //Navigate.saveBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
             lblCompetitor.Visible = true; txtCompetitorID.Visible = true;
             //save button to handle different methods
             if (isAdding == true)
@@ -131,14 +131,14 @@ namespace esport_leauge
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Navigate.cancelBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
+            //Navigate.cancelBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
             ReadWriteClass.SetReadonlyControls(grpCompetitor.Controls);
             lblCompetitor.Visible = true; txtCompetitorID.Visible = true;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Navigate.addBtn(pnlList, btnUpdate, btnDelete, btnSave, btnCancel);
+           // Navigate.addBtn(pnlList, btnUpdate, btnDelete, btnSave, btnCancel);
             ReadWriteClass.SetEditControls(grpCompetitor.Controls);
             isAdding = true;
             isUpdating = false;

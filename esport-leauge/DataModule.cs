@@ -83,7 +83,7 @@ namespace esport_leauge
             daEntry.Update(dtEntry);
         }
 
-        private void daArena_RowUpdated(object sender, System.Data.OleDb.OleDbRowUpdatedEventArgs e)
+        private void daArena_RowUpdated(object sender, OleDbRowUpdatedEventArgs e)
         {
             int newID = 0;
             OleDbCommand idCMD = new OleDbCommand("SELECT @@IDENTITY", dbConnection);

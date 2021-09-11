@@ -56,7 +56,7 @@ namespace esport_leauge
         private bool isUpdating;
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Navigate.saveBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
+           // Navigate.saveBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
             btnComplete.Enabled = true;
             btnFinished.Enabled = true;
             txtChallengeID.Visible = true;
@@ -66,7 +66,7 @@ namespace esport_leauge
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Navigate.cancelBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
+           // Navigate.cancelBtn(pnlList, btnAdd, btnUpdate, btnDelete, btnSave, btnCancel);
             ReadWriteClass.SetReadonlyControls(grpChallenge.Controls);
             btnComplete.Enabled = true;
             btnFinished.Enabled = true;
@@ -77,7 +77,7 @@ namespace esport_leauge
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Navigate.addBtn(pnlList, btnUpdate, btnDelete, btnSave, btnCancel);
+          //  Navigate.addBtn(pnlList, btnUpdate, btnDelete, btnSave, btnCancel);
             ReadWriteClass.SetEditControls(grpChallenge.Controls);
             btnComplete.Enabled = false;
             btnFinished.Enabled = false;

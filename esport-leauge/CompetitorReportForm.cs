@@ -53,20 +53,17 @@ namespace esport_leauge
                     //output competitor details
                     competitorDetails += "Competitor ID: " + drCompetitor["CompetitorID"] + "\r\n\r\n";
                     competitorDetails += "Username: \t" + drCompetitor["UserName"] + "\r\n";
-                    competitorDetails += "Name: \t" + drCompetitor["FirstName"] + "\r\n";
-                    competitorDetails += "Gender: \t" + drCompetitor["Gender"] + "\r\n";
+                    competitorDetails += "Name: \t\t" + drCompetitor["FirstName"] + "\r\n";
+                    competitorDetails += "Gender: \t\t" + drCompetitor["Gender"] + "\r\n";
                     competitorDetails += "Date Of Birth: \t" + drCompetitor["DateOfBirth"] + "\r\n";
-                    competitorDetails += "Email: \t" + drCompetitor["EmailAddress"] + "\r\n\r\n";
+                    competitorDetails += "Email: \t\t" + drCompetitor["EmailAddress"] + "\r\n\r\n";
 
                     competitorDetails += "Entries:" + "\r\n\r\n";
 
-                    txtReportComp.Text += competitorDetails;
-
+                    competitorDetails += "Challenge ID\t" + "Challenge Name\t\t" + "Start Time\t\t\r\n\r\n";
 
                     //loop for each entry associate with competitor id in entry table
-                    string entriesDetails = "";
-                    entriesDetails = "Challenge ID\t" + "Challenge Name\t\t" + "Start Time" + "\r\n\r\n";
-                    competitorDetails += entriesDetails;
+
                     foreach (DataRow drCompEntries in drEntries)
                     {
                         int chID = Convert.ToInt32(drCompEntries["ChallengeID"].ToString());
