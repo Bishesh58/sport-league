@@ -109,6 +109,7 @@ namespace esport_leauge
                 {
                     deleteEventRow.Delete();
                     DM.updateEvent();
+                    MessageBox.Show("Event deleted Successfully");
                 }
             }
         }

@@ -83,10 +83,10 @@ namespace esport_leauge
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(352, 401);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(469, 494);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 44);
+            this.btnAdd.Size = new System.Drawing.Size(115, 54);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -99,19 +99,19 @@ namespace esport_leauge
             this.lstArena.FormattingEnabled = true;
             this.lstArena.ItemHeight = 23;
             this.lstArena.Location = new System.Drawing.Point(0, 0);
-            this.lstArena.Margin = new System.Windows.Forms.Padding(2);
+            this.lstArena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstArena.Name = "lstArena";
-            this.lstArena.Size = new System.Drawing.Size(256, 408);
+            this.lstArena.Size = new System.Drawing.Size(341, 502);
             this.lstArena.TabIndex = 1;
             // 
             // pnlList
             // 
             this.pnlList.Controls.Add(this.panel2);
             this.pnlList.Controls.Add(this.lstArena);
-            this.pnlList.Location = new System.Drawing.Point(33, 37);
-            this.pnlList.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlList.Location = new System.Drawing.Point(44, 46);
+            this.pnlList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlList.Name = "pnlList";
-            this.pnlList.Size = new System.Drawing.Size(256, 408);
+            this.pnlList.Size = new System.Drawing.Size(341, 502);
             this.pnlList.TabIndex = 2;
             // 
             // panel2
@@ -120,10 +120,10 @@ namespace esport_leauge
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.btnPrevious);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 364);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, 448);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(256, 44);
+            this.panel2.Size = new System.Drawing.Size(341, 54);
             this.panel2.TabIndex = 0;
             // 
             // btnNext
@@ -136,10 +136,10 @@ namespace esport_leauge
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(170, 0);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Location = new System.Drawing.Point(226, 0);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(86, 44);
+            this.btnNext.Size = new System.Drawing.Size(115, 54);
             this.btnNext.TabIndex = 20;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -156,9 +156,9 @@ namespace esport_leauge
             this.btnPrevious.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.ForeColor = System.Drawing.Color.White;
             this.btnPrevious.Location = new System.Drawing.Point(0, 0);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(86, 44);
+            this.btnPrevious.Size = new System.Drawing.Size(115, 54);
             this.btnPrevious.TabIndex = 19;
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = false;
@@ -168,8 +168,7 @@ namespace esport_leauge
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 37);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(52, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 23);
             this.label1.TabIndex = 3;
@@ -178,19 +177,19 @@ namespace esport_leauge
             // txtArenaID
             // 
             this.txtArenaID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArenaID.Location = new System.Drawing.Point(137, 35);
-            this.txtArenaID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArenaID.Location = new System.Drawing.Point(183, 43);
+            this.txtArenaID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtArenaID.Name = "txtArenaID";
-            this.txtArenaID.Size = new System.Drawing.Size(51, 30);
+            this.txtArenaID.Size = new System.Drawing.Size(67, 30);
             this.txtArenaID.TabIndex = 4;
             // 
             // txtArenaName
             // 
             this.txtArenaName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArenaName.Location = new System.Drawing.Point(137, 74);
-            this.txtArenaName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArenaName.Location = new System.Drawing.Point(183, 91);
+            this.txtArenaName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtArenaName.Name = "txtArenaName";
-            this.txtArenaName.Size = new System.Drawing.Size(168, 30);
+            this.txtArenaName.Size = new System.Drawing.Size(223, 30);
             this.txtArenaName.TabIndex = 6;
             this.txtArenaName.TextChanged += new System.EventHandler(this.txtArenaName_TextChanged);
             // 
@@ -198,8 +197,7 @@ namespace esport_leauge
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 76);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(23, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 23);
             this.label2.TabIndex = 5;
@@ -208,18 +206,17 @@ namespace esport_leauge
             // txtStreetAddress
             // 
             this.txtStreetAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreetAddress.Location = new System.Drawing.Point(137, 113);
-            this.txtStreetAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStreetAddress.Location = new System.Drawing.Point(183, 139);
+            this.txtStreetAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStreetAddress.Name = "txtStreetAddress";
-            this.txtStreetAddress.Size = new System.Drawing.Size(200, 30);
+            this.txtStreetAddress.Size = new System.Drawing.Size(265, 30);
             this.txtStreetAddress.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 115);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(11, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 23);
             this.label3.TabIndex = 7;
@@ -228,18 +225,17 @@ namespace esport_leauge
             // txtSuburb
             // 
             this.txtSuburb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSuburb.Location = new System.Drawing.Point(137, 155);
-            this.txtSuburb.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSuburb.Location = new System.Drawing.Point(183, 191);
+            this.txtSuburb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSuburb.Name = "txtSuburb";
-            this.txtSuburb.Size = new System.Drawing.Size(131, 30);
+            this.txtSuburb.Size = new System.Drawing.Size(173, 30);
             this.txtSuburb.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 161);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(64, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 23);
             this.label4.TabIndex = 9;
@@ -249,8 +245,7 @@ namespace esport_leauge
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(68, 205);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(91, 252);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 23);
             this.label5.TabIndex = 11;
@@ -260,10 +255,10 @@ namespace esport_leauge
             // 
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneNumber.Location = new System.Drawing.Point(137, 247);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(183, 304);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(131, 30);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(173, 30);
             this.txtPhoneNumber.TabIndex = 14;
             this.txtPhoneNumber.MouseHover += new System.EventHandler(this.txtPhoneNumber_MouseHover);
             // 
@@ -271,8 +266,7 @@ namespace esport_leauge
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(2, 253);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(3, 311);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 23);
             this.label6.TabIndex = 13;
@@ -287,10 +281,10 @@ namespace esport_leauge
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(442, 401);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(589, 494);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(86, 44);
+            this.btnUpdate.Size = new System.Drawing.Size(115, 54);
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -305,10 +299,10 @@ namespace esport_leauge
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(533, 401);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Location = new System.Drawing.Point(711, 494);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 44);
+            this.btnDelete.Size = new System.Drawing.Size(115, 54);
             this.btnDelete.TabIndex = 16;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -323,10 +317,10 @@ namespace esport_leauge
             this.btnSaveChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveChanges.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveChanges.ForeColor = System.Drawing.Color.White;
-            this.btnSaveChanges.Location = new System.Drawing.Point(45, 296);
-            this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveChanges.Location = new System.Drawing.Point(60, 364);
+            this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveChanges.Name = "btnSaveChanges";
-            this.btnSaveChanges.Size = new System.Drawing.Size(177, 44);
+            this.btnSaveChanges.Size = new System.Drawing.Size(236, 54);
             this.btnSaveChanges.TabIndex = 17;
             this.btnSaveChanges.Text = "Save Changes";
             this.btnSaveChanges.UseVisualStyleBackColor = false;
@@ -342,10 +336,10 @@ namespace esport_leauge
             this.btnCancelUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelUpdate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnCancelUpdate.Location = new System.Drawing.Point(226, 296);
-            this.btnCancelUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelUpdate.Location = new System.Drawing.Point(301, 364);
+            this.btnCancelUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelUpdate.Name = "btnCancelUpdate";
-            this.btnCancelUpdate.Size = new System.Drawing.Size(86, 44);
+            this.btnCancelUpdate.Size = new System.Drawing.Size(115, 54);
             this.btnCancelUpdate.TabIndex = 18;
             this.btnCancelUpdate.Text = "Cancel";
             this.btnCancelUpdate.UseVisualStyleBackColor = false;
@@ -354,14 +348,15 @@ namespace esport_leauge
             // 
             // cboTxtCity
             // 
+            this.cboTxtCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTxtCity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTxtCity.FormattingEnabled = true;
             this.cboTxtCity.Items.AddRange(new object[] {
             "Auckland"});
-            this.cboTxtCity.Location = new System.Drawing.Point(137, 198);
-            this.cboTxtCity.Margin = new System.Windows.Forms.Padding(2);
+            this.cboTxtCity.Location = new System.Drawing.Point(183, 244);
+            this.cboTxtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTxtCity.Name = "cboTxtCity";
-            this.cboTxtCity.Size = new System.Drawing.Size(131, 31);
+            this.cboTxtCity.Size = new System.Drawing.Size(173, 31);
             this.cboTxtCity.TabIndex = 19;
             // 
             // grpArena
@@ -380,11 +375,11 @@ namespace esport_leauge
             this.grpArena.Controls.Add(this.label6);
             this.grpArena.Controls.Add(this.txtSuburb);
             this.grpArena.Controls.Add(this.label5);
-            this.grpArena.Location = new System.Drawing.Point(307, 37);
-            this.grpArena.Margin = new System.Windows.Forms.Padding(2);
+            this.grpArena.Location = new System.Drawing.Point(409, 46);
+            this.grpArena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpArena.Name = "grpArena";
-            this.grpArena.Padding = new System.Windows.Forms.Padding(2);
-            this.grpArena.Size = new System.Drawing.Size(356, 352);
+            this.grpArena.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpArena.Size = new System.Drawing.Size(475, 433);
             this.grpArena.TabIndex = 2;
             this.grpArena.TabStop = false;
             this.grpArena.Text = "Arena details:";
@@ -403,9 +398,10 @@ namespace esport_leauge
             this.pnlAddArena.Controls.Add(this.label10);
             this.pnlAddArena.Controls.Add(this.txtNewSuburb);
             this.pnlAddArena.Controls.Add(this.label11);
-            this.pnlAddArena.Location = new System.Drawing.Point(685, 37);
+            this.pnlAddArena.Location = new System.Drawing.Point(913, 46);
+            this.pnlAddArena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlAddArena.Name = "pnlAddArena";
-            this.pnlAddArena.Size = new System.Drawing.Size(366, 352);
+            this.pnlAddArena.Size = new System.Drawing.Size(488, 433);
             this.pnlAddArena.TabIndex = 17;
             this.pnlAddArena.Visible = false;
             // 
@@ -418,10 +414,10 @@ namespace esport_leauge
             this.btnCancelAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelAdd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelAdd.ForeColor = System.Drawing.Color.White;
-            this.btnCancelAdd.Location = new System.Drawing.Point(222, 253);
-            this.btnCancelAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelAdd.Location = new System.Drawing.Point(296, 311);
+            this.btnCancelAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelAdd.Name = "btnCancelAdd";
-            this.btnCancelAdd.Size = new System.Drawing.Size(86, 44);
+            this.btnCancelAdd.Size = new System.Drawing.Size(115, 54);
             this.btnCancelAdd.TabIndex = 31;
             this.btnCancelAdd.Text = "Cancel";
             this.btnCancelAdd.UseVisualStyleBackColor = false;
@@ -436,10 +432,10 @@ namespace esport_leauge
             this.btnSaveArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveArena.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveArena.ForeColor = System.Drawing.Color.White;
-            this.btnSaveArena.Location = new System.Drawing.Point(41, 253);
-            this.btnSaveArena.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveArena.Location = new System.Drawing.Point(55, 311);
+            this.btnSaveArena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveArena.Name = "btnSaveArena";
-            this.btnSaveArena.Size = new System.Drawing.Size(177, 44);
+            this.btnSaveArena.Size = new System.Drawing.Size(236, 54);
             this.btnSaveArena.TabIndex = 30;
             this.btnSaveArena.Text = "Save  Arena";
             this.btnSaveArena.UseVisualStyleBackColor = false;
@@ -448,32 +444,32 @@ namespace esport_leauge
             // txtNewStreetAddress
             // 
             this.txtNewStreetAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewStreetAddress.Location = new System.Drawing.Point(143, 56);
-            this.txtNewStreetAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNewStreetAddress.Location = new System.Drawing.Point(191, 69);
+            this.txtNewStreetAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewStreetAddress.Name = "txtNewStreetAddress";
-            this.txtNewStreetAddress.Size = new System.Drawing.Size(200, 30);
+            this.txtNewStreetAddress.Size = new System.Drawing.Size(265, 30);
             this.txtNewStreetAddress.TabIndex = 23;
             // 
             // cboNewTxtCity
             // 
+            this.cboNewTxtCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNewTxtCity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNewTxtCity.FormattingEnabled = true;
             this.cboNewTxtCity.Items.AddRange(new object[] {
             "Auckland",
             "Hamilton",
             "Tauranga"});
-            this.cboNewTxtCity.Location = new System.Drawing.Point(143, 141);
-            this.cboNewTxtCity.Margin = new System.Windows.Forms.Padding(2);
+            this.cboNewTxtCity.Location = new System.Drawing.Point(191, 174);
+            this.cboNewTxtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewTxtCity.Name = "cboNewTxtCity";
-            this.cboNewTxtCity.Size = new System.Drawing.Size(131, 31);
+            this.cboNewTxtCity.Size = new System.Drawing.Size(173, 31);
             this.cboNewTxtCity.TabIndex = 29;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(23, 19);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(31, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 23);
             this.label7.TabIndex = 20;
@@ -482,18 +478,17 @@ namespace esport_leauge
             // txtNewArenaName
             // 
             this.txtNewArenaName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewArenaName.Location = new System.Drawing.Point(143, 17);
-            this.txtNewArenaName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNewArenaName.Location = new System.Drawing.Point(191, 21);
+            this.txtNewArenaName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewArenaName.Name = "txtNewArenaName";
-            this.txtNewArenaName.Size = new System.Drawing.Size(168, 30);
+            this.txtNewArenaName.Size = new System.Drawing.Size(223, 30);
             this.txtNewArenaName.TabIndex = 21;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 58);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(19, 71);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 23);
             this.label8.TabIndex = 22;
@@ -503,10 +498,10 @@ namespace esport_leauge
             // 
             this.txtNewPhoneNumber.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtNewPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPhoneNumber.Location = new System.Drawing.Point(143, 190);
-            this.txtNewPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNewPhoneNumber.Location = new System.Drawing.Point(191, 234);
+            this.txtNewPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewPhoneNumber.Name = "txtNewPhoneNumber";
-            this.txtNewPhoneNumber.Size = new System.Drawing.Size(131, 30);
+            this.txtNewPhoneNumber.Size = new System.Drawing.Size(173, 30);
             this.txtNewPhoneNumber.TabIndex = 28;
             this.txtNewPhoneNumber.MouseHover += new System.EventHandler(this.txtNewPhoneNumber_MouseHover);
             // 
@@ -514,8 +509,7 @@ namespace esport_leauge
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(54, 104);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(72, 128);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 23);
             this.label9.TabIndex = 24;
@@ -525,8 +519,7 @@ namespace esport_leauge
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(8, 196);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(11, 241);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(131, 23);
             this.label10.TabIndex = 27;
@@ -535,18 +528,17 @@ namespace esport_leauge
             // txtNewSuburb
             // 
             this.txtNewSuburb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewSuburb.Location = new System.Drawing.Point(143, 98);
-            this.txtNewSuburb.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNewSuburb.Location = new System.Drawing.Point(191, 121);
+            this.txtNewSuburb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewSuburb.Name = "txtNewSuburb";
-            this.txtNewSuburb.Size = new System.Drawing.Size(131, 30);
+            this.txtNewSuburb.Size = new System.Drawing.Size(173, 30);
             this.txtNewSuburb.TabIndex = 25;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(74, 148);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(99, 182);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(43, 23);
             this.label11.TabIndex = 26;
@@ -554,10 +546,10 @@ namespace esport_leauge
             // 
             // ArenaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1076, 602);
+            this.ClientSize = new System.Drawing.Size(1435, 741);
             this.Controls.Add(this.pnlAddArena);
             this.Controls.Add(this.grpArena);
             this.Controls.Add(this.btnDelete);
@@ -565,7 +557,7 @@ namespace esport_leauge
             this.Controls.Add(this.pnlList);
             this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ArenaForm";
             this.Text = "Arena Maintenance";
             this.Load += new System.EventHandler(this.ArenaForm_Load);

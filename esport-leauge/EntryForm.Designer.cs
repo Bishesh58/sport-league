@@ -145,6 +145,7 @@ namespace esport_leauge
             // 
             // cboTxtStatus
             // 
+            this.cboTxtStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTxtStatus.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTxtStatus.FormattingEnabled = true;
             this.cboTxtStatus.Location = new System.Drawing.Point(699, 87);

@@ -59,7 +59,6 @@ namespace esport_leauge
             EntryView = new DataView(dtEntry);
             EntryView.Sort = "ChallengeID";
             DSnzesl.EnforceConstraints = true;
-
         }
 
         public void updateArena()
@@ -92,8 +91,6 @@ namespace esport_leauge
                 newID = (int)idCMD.ExecuteScalar();
                 e.Row["ArenaID"] = newID;
             }
-
-
         }
 
         private void daChallenge_RowUpdated(object sender, OleDbRowUpdatedEventArgs e)

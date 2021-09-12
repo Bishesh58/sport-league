@@ -86,6 +86,7 @@ namespace esport_leauge
                 {
                     deleteArenaRow.Delete();
                     DM.updateArena();
+                    MessageBox.Show("Arena deleted Successfully");
                 }
             }
 
