@@ -155,12 +155,21 @@ namespace esport_leauge
             DataRow newChallengeRow = DM.dtChallenge.NewRow();
             try
             {
-                if ((txtNewChallengeName.Text == "") || (cboNewEventID.Text == "") || (cboNewEventName.Text == "") ||
-                    (txtNewStartTime.Text == "") || (txtNewCapacity.Text == "") || cboNewStatus.Text == "")
+                if ((txtNewChallengeName.Text == "") || cboNewStatus.Text == "")
                 {
                     MessageBox.Show("You must type in a all fields", "Error");
                     currencyManager.CancelCurrentEdit();
                 }
+                else if (Int32.TryParse(txtNewChallengeName.Text, out int val1))
+                {
+                    MessageBox.Show("Numeric value is not allowed on UserName");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (!(txtNewCapacity.Value > 1 && txtNewCapacity.Value < 40))
+                {
+                    MessageBox.Show("Please enter value between 1 to 40");
+                }
+                
                 else
                 {
                     newChallengeRow["ChallengeName"] = txtNewChallengeName.Text;
@@ -180,6 +189,7 @@ namespace esport_leauge
             {
 
                 MessageBox.Show(ex.Message);
+                currencyManager.CancelCurrentEdit();
             }
         }
 
@@ -194,6 +204,15 @@ namespace esport_leauge
                 {
                     currencyManager.CancelCurrentEdit();
                     MessageBox.Show("You must type in a all fields", "Error");
+                }
+                else if (Int32.TryParse(txtChallengeName.Text, out int val1))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Challenge Name");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (!(txtCapacity.Value > 1 && txtNewCapacity.Value < 40))
+                {
+                    MessageBox.Show("Please enter value between 1 to 40");
                 }
                 else
                 {

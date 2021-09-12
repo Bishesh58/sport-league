@@ -29,7 +29,6 @@ namespace esport_leauge
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.btnCancelUpdate = new System.Windows.Forms.Button();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -56,10 +55,6 @@ namespace esport_leauge
             this.txtEventDate = new System.Windows.Forms.DateTimePicker();
             this.grpEvent = new System.Windows.Forms.GroupBox();
             this.dSnzesl = new esport_leauge.DSnzesl();
-            this.dSnzeslBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSnzeslBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.aRENABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aRENABindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pnlAddEvent = new System.Windows.Forms.Panel();
             this.btnCancelAdd = new System.Windows.Forms.Button();
             this.btnSaveEvent = new System.Windows.Forms.Button();
@@ -80,10 +75,6 @@ namespace esport_leauge
             ((System.ComponentModel.ISupportInitialize)(this.txtCapacity)).BeginInit();
             this.grpEvent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dSnzesl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSnzeslBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSnzeslBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aRENABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aRENABindingSource1)).BeginInit();
             this.pnlAddEvent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtNewCapacity)).BeginInit();
             this.SuspendLayout();
@@ -168,7 +159,7 @@ namespace esport_leauge
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(61, 314);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 23);
+            this.label6.Size = new System.Drawing.Size(64, 19);
             this.label6.TabIndex = 49;
             this.label6.Text = "Capacity:";
             // 
@@ -178,7 +169,7 @@ namespace esport_leauge
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(77, 255);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 23);
+            this.label5.Size = new System.Drawing.Size(50, 19);
             this.label5.TabIndex = 47;
             this.label5.Text = "Status:";
             // 
@@ -187,7 +178,7 @@ namespace esport_leauge
             this.lstEvent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstEvent.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.lstEvent.FormattingEnabled = true;
-            this.lstEvent.ItemHeight = 23;
+            this.lstEvent.ItemHeight = 19;
             this.lstEvent.Location = new System.Drawing.Point(0, 0);
             this.lstEvent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstEvent.Name = "lstEvent";
@@ -200,7 +191,7 @@ namespace esport_leauge
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(29, 201);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 23);
+            this.label4.Size = new System.Drawing.Size(88, 19);
             this.label4.TabIndex = 45;
             this.label4.Text = "Arena Name:";
             // 
@@ -210,7 +201,7 @@ namespace esport_leauge
             this.txtEventName.Location = new System.Drawing.Point(176, 98);
             this.txtEventName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEventName.Name = "txtEventName";
-            this.txtEventName.Size = new System.Drawing.Size(223, 30);
+            this.txtEventName.Size = new System.Drawing.Size(223, 26);
             this.txtEventName.TabIndex = 42;
             // 
             // label2
@@ -219,7 +210,7 @@ namespace esport_leauge
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 23);
+            this.label2.Size = new System.Drawing.Size(86, 19);
             this.label2.TabIndex = 41;
             this.label2.Text = "Event Name:";
             // 
@@ -229,7 +220,7 @@ namespace esport_leauge
             this.txtEventID.Location = new System.Drawing.Point(176, 50);
             this.txtEventID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEventID.Name = "txtEventID";
-            this.txtEventID.Size = new System.Drawing.Size(67, 30);
+            this.txtEventID.Size = new System.Drawing.Size(67, 26);
             this.txtEventID.TabIndex = 40;
             // 
             // lblEventID
@@ -238,7 +229,7 @@ namespace esport_leauge
             this.lblEventID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEventID.Location = new System.Drawing.Point(59, 53);
             this.lblEventID.Name = "lblEventID";
-            this.lblEventID.Size = new System.Drawing.Size(78, 23);
+            this.lblEventID.Size = new System.Drawing.Size(64, 19);
             this.lblEventID.TabIndex = 39;
             this.lblEventID.Text = "Event ID:";
             // 
@@ -308,7 +299,7 @@ namespace esport_leauge
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(56, 149);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 23);
+            this.label3.Size = new System.Drawing.Size(66, 19);
             this.label3.TabIndex = 43;
             this.label3.Text = "Arena ID:";
             // 
@@ -336,7 +327,7 @@ namespace esport_leauge
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(40, 369);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 23);
+            this.label7.Size = new System.Drawing.Size(79, 19);
             this.label7.TabIndex = 55;
             this.label7.Text = "Event Date:";
             // 
@@ -352,7 +343,7 @@ namespace esport_leauge
             this.cboTxtStatus.Location = new System.Drawing.Point(176, 252);
             this.cboTxtStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTxtStatus.Name = "cboTxtStatus";
-            this.cboTxtStatus.Size = new System.Drawing.Size(173, 31);
+            this.cboTxtStatus.Size = new System.Drawing.Size(173, 27);
             this.cboTxtStatus.TabIndex = 57;
             // 
             // cboArenaID
@@ -363,7 +354,7 @@ namespace esport_leauge
             this.cboArenaID.Location = new System.Drawing.Point(176, 146);
             this.cboArenaID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboArenaID.Name = "cboArenaID";
-            this.cboArenaID.Size = new System.Drawing.Size(67, 31);
+            this.cboArenaID.Size = new System.Drawing.Size(67, 27);
             this.cboArenaID.TabIndex = 58;
             // 
             // cboArenaName
@@ -374,7 +365,7 @@ namespace esport_leauge
             this.cboArenaName.Location = new System.Drawing.Point(176, 201);
             this.cboArenaName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboArenaName.Name = "cboArenaName";
-            this.cboArenaName.Size = new System.Drawing.Size(205, 31);
+            this.cboArenaName.Size = new System.Drawing.Size(205, 27);
             this.cboArenaName.TabIndex = 59;
             // 
             // txtCapacity
@@ -393,7 +384,7 @@ namespace esport_leauge
             0,
             0});
             this.txtCapacity.Name = "txtCapacity";
-            this.txtCapacity.Size = new System.Drawing.Size(120, 30);
+            this.txtCapacity.Size = new System.Drawing.Size(120, 26);
             this.txtCapacity.TabIndex = 60;
             this.txtCapacity.Value = new decimal(new int[] {
             50,
@@ -408,7 +399,7 @@ namespace esport_leauge
             this.txtEventDate.Location = new System.Drawing.Point(176, 362);
             this.txtEventDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEventDate.Name = "txtEventDate";
-            this.txtEventDate.Size = new System.Drawing.Size(173, 30);
+            this.txtEventDate.Size = new System.Drawing.Size(173, 26);
             this.txtEventDate.TabIndex = 61;
             // 
             // grpEvent
@@ -443,26 +434,6 @@ namespace esport_leauge
             this.dSnzesl.DataSetName = "DSnzesl";
             this.dSnzesl.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dSnzeslBindingSource
-            // 
-            this.dSnzeslBindingSource.DataSource = this.dSnzesl;
-            this.dSnzeslBindingSource.Position = 0;
-            // 
-            // dSnzeslBindingSource1
-            // 
-            this.dSnzeslBindingSource1.DataSource = this.dSnzesl;
-            this.dSnzeslBindingSource1.Position = 0;
-            // 
-            // aRENABindingSource
-            // 
-            this.aRENABindingSource.DataMember = "ARENA";
-            this.aRENABindingSource.DataSource = this.dSnzeslBindingSource;
-            // 
-            // aRENABindingSource1
-            // 
-            this.aRENABindingSource1.DataMember = "ARENA";
-            this.aRENABindingSource1.DataSource = this.dSnzeslBindingSource;
-            // 
             // pnlAddEvent
             // 
             this.pnlAddEvent.Controls.Add(this.btnCancelAdd);
@@ -480,7 +451,7 @@ namespace esport_leauge
             this.pnlAddEvent.Controls.Add(this.label11);
             this.pnlAddEvent.Controls.Add(this.label12);
             this.pnlAddEvent.Location = new System.Drawing.Point(880, 47);
-            this.pnlAddEvent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAddEvent.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAddEvent.Name = "pnlAddEvent";
             this.pnlAddEvent.Size = new System.Drawing.Size(439, 487);
             this.pnlAddEvent.TabIndex = 53;
@@ -529,7 +500,7 @@ namespace esport_leauge
             this.txtNewEventDate.Location = new System.Drawing.Point(175, 324);
             this.txtNewEventDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewEventDate.Name = "txtNewEventDate";
-            this.txtNewEventDate.Size = new System.Drawing.Size(173, 30);
+            this.txtNewEventDate.Size = new System.Drawing.Size(173, 26);
             this.txtNewEventDate.TabIndex = 75;
             // 
             // label1
@@ -538,7 +509,7 @@ namespace esport_leauge
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(55, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 23);
+            this.label1.Size = new System.Drawing.Size(66, 19);
             this.label1.TabIndex = 64;
             this.label1.Text = "Arena ID:";
             // 
@@ -558,7 +529,7 @@ namespace esport_leauge
             0,
             0});
             this.txtNewCapacity.Name = "txtNewCapacity";
-            this.txtNewCapacity.Size = new System.Drawing.Size(120, 30);
+            this.txtNewCapacity.Size = new System.Drawing.Size(120, 26);
             this.txtNewCapacity.TabIndex = 74;
             this.txtNewCapacity.Value = new decimal(new int[] {
             50,
@@ -574,7 +545,7 @@ namespace esport_leauge
             this.cboNewArenaName.Location = new System.Drawing.Point(175, 162);
             this.cboNewArenaName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewArenaName.Name = "cboNewArenaName";
-            this.cboNewArenaName.Size = new System.Drawing.Size(244, 31);
+            this.cboNewArenaName.Size = new System.Drawing.Size(244, 27);
             this.cboNewArenaName.TabIndex = 73;
             // 
             // label8
@@ -583,7 +554,7 @@ namespace esport_leauge
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(28, 63);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 23);
+            this.label8.Size = new System.Drawing.Size(86, 19);
             this.label8.TabIndex = 62;
             this.label8.Text = "Event Name:";
             // 
@@ -595,7 +566,7 @@ namespace esport_leauge
             this.cboNewArenaID.Location = new System.Drawing.Point(175, 108);
             this.cboNewArenaID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewArenaID.Name = "cboNewArenaID";
-            this.cboNewArenaID.Size = new System.Drawing.Size(67, 31);
+            this.cboNewArenaID.Size = new System.Drawing.Size(67, 27);
             this.cboNewArenaID.TabIndex = 72;
             // 
             // txtNewEventName
@@ -604,7 +575,7 @@ namespace esport_leauge
             this.txtNewEventName.Location = new System.Drawing.Point(175, 60);
             this.txtNewEventName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewEventName.Name = "txtNewEventName";
-            this.txtNewEventName.Size = new System.Drawing.Size(223, 30);
+            this.txtNewEventName.Size = new System.Drawing.Size(223, 26);
             this.txtNewEventName.TabIndex = 63;
             // 
             // cboNewTxtStatus
@@ -619,7 +590,7 @@ namespace esport_leauge
             this.cboNewTxtStatus.Location = new System.Drawing.Point(175, 214);
             this.cboNewTxtStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewTxtStatus.Name = "cboNewTxtStatus";
-            this.cboNewTxtStatus.Size = new System.Drawing.Size(173, 31);
+            this.cboNewTxtStatus.Size = new System.Drawing.Size(173, 27);
             this.cboNewTxtStatus.TabIndex = 71;
             // 
             // label9
@@ -628,7 +599,7 @@ namespace esport_leauge
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(28, 162);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 23);
+            this.label9.Size = new System.Drawing.Size(88, 19);
             this.label9.TabIndex = 65;
             this.label9.Text = "Arena Name:";
             // 
@@ -638,7 +609,7 @@ namespace esport_leauge
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(39, 331);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 23);
+            this.label10.Size = new System.Drawing.Size(79, 19);
             this.label10.TabIndex = 70;
             this.label10.Text = "Event Date:";
             // 
@@ -648,7 +619,7 @@ namespace esport_leauge
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(76, 217);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 23);
+            this.label11.Size = new System.Drawing.Size(50, 19);
             this.label11.TabIndex = 66;
             this.label11.Text = "Status:";
             // 
@@ -658,7 +629,7 @@ namespace esport_leauge
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(60, 276);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(79, 23);
+            this.label12.Size = new System.Drawing.Size(64, 19);
             this.label12.TabIndex = 67;
             this.label12.Text = "Capacity:";
             // 
@@ -684,10 +655,6 @@ namespace esport_leauge
             this.grpEvent.ResumeLayout(false);
             this.grpEvent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dSnzesl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSnzeslBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSnzeslBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aRENABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aRENABindingSource1)).EndInit();
             this.pnlAddEvent.ResumeLayout(false);
             this.pnlAddEvent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtNewCapacity)).EndInit();
@@ -722,11 +689,7 @@ namespace esport_leauge
         private System.Windows.Forms.NumericUpDown txtCapacity;
         private System.Windows.Forms.DateTimePicker txtEventDate;
         private System.Windows.Forms.GroupBox grpEvent;
-        private System.Windows.Forms.BindingSource dSnzeslBindingSource1;
         private DSnzesl dSnzesl;
-        private System.Windows.Forms.BindingSource dSnzeslBindingSource;
-        private System.Windows.Forms.BindingSource aRENABindingSource;
-        private System.Windows.Forms.BindingSource aRENABindingSource1;
         private System.Windows.Forms.Panel pnlAddEvent;
         private System.Windows.Forms.Button btnCancelAdd;
         private System.Windows.Forms.Button btnSaveEvent;

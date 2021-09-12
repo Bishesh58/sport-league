@@ -118,7 +118,18 @@ namespace esport_leauge
         {
             Navigate.btnSaveChanges(pnlList, pnlAddArena, grpArena, btnAdd, btnUpdate, btnDelete, btnSaveChanges, btnCancelUpdate);
 
-            handleUpdateData();
+            Regex exp = new Regex(@"\d{3}-\d{4}");
+
+            if (exp.IsMatch(txtNewPhoneNumber.Text))
+            {
+                handleUpdateData();
+            }
+            else
+            {
+                MessageBox.Show("Invalid phone number, please enter like: 000-0000");
+                currencyManager.CancelCurrentEdit();
+            }
+            
 
             //make controls readonly
             ReadWriteClass.SetReadonlyControls(grpArena.Controls);

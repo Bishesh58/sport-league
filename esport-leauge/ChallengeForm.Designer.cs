@@ -159,7 +159,7 @@ namespace esport_leauge
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(84, 336);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 23);
+            this.label6.Size = new System.Drawing.Size(64, 19);
             this.label6.TabIndex = 31;
             this.label6.Text = "Capacity:";
             // 
@@ -169,7 +169,7 @@ namespace esport_leauge
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(109, 284);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 23);
+            this.label5.Size = new System.Drawing.Size(50, 19);
             this.label5.TabIndex = 30;
             this.label5.Text = "Status:";
             // 
@@ -179,7 +179,7 @@ namespace esport_leauge
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(55, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 23);
+            this.label4.Size = new System.Drawing.Size(86, 19);
             this.label4.TabIndex = 28;
             this.label4.Text = "Event Name:";
             // 
@@ -189,7 +189,7 @@ namespace esport_leauge
             this.lblEventID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEventID.Location = new System.Drawing.Point(88, 135);
             this.lblEventID.Name = "lblEventID";
-            this.lblEventID.Size = new System.Drawing.Size(78, 23);
+            this.lblEventID.Size = new System.Drawing.Size(64, 19);
             this.lblEventID.TabIndex = 26;
             this.lblEventID.Text = "Event ID:";
             // 
@@ -199,7 +199,7 @@ namespace esport_leauge
             this.txtChallengeName.Location = new System.Drawing.Point(217, 80);
             this.txtChallengeName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtChallengeName.Name = "txtChallengeName";
-            this.txtChallengeName.Size = new System.Drawing.Size(223, 30);
+            this.txtChallengeName.Size = new System.Drawing.Size(223, 26);
             this.txtChallengeName.TabIndex = 25;
             // 
             // txtChallengeID
@@ -208,7 +208,7 @@ namespace esport_leauge
             this.txtChallengeID.Location = new System.Drawing.Point(217, 32);
             this.txtChallengeID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtChallengeID.Name = "txtChallengeID";
-            this.txtChallengeID.Size = new System.Drawing.Size(67, 30);
+            this.txtChallengeID.Size = new System.Drawing.Size(67, 26);
             this.txtChallengeID.TabIndex = 23;
             // 
             // lblChallengeID
@@ -217,7 +217,7 @@ namespace esport_leauge
             this.lblChallengeID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChallengeID.Location = new System.Drawing.Point(55, 36);
             this.lblChallengeID.Name = "lblChallengeID";
-            this.lblChallengeID.Size = new System.Drawing.Size(112, 23);
+            this.lblChallengeID.Size = new System.Drawing.Size(90, 19);
             this.lblChallengeID.TabIndex = 22;
             this.lblChallengeID.Text = "Challenge ID:";
             // 
@@ -286,7 +286,7 @@ namespace esport_leauge
             this.lstChallenge.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstChallenge.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.lstChallenge.FormattingEnabled = true;
-            this.lstChallenge.ItemHeight = 23;
+            this.lstChallenge.ItemHeight = 19;
             this.lstChallenge.Location = new System.Drawing.Point(0, 0);
             this.lstChallenge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstChallenge.Name = "lstChallenge";
@@ -300,7 +300,7 @@ namespace esport_leauge
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(16, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 23);
+            this.label2.Size = new System.Drawing.Size(112, 19);
             this.label2.TabIndex = 24;
             this.label2.Text = "Challenge Name:";
             // 
@@ -366,7 +366,7 @@ namespace esport_leauge
             this.cboEventID.Location = new System.Drawing.Point(217, 126);
             this.cboEventID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboEventID.Name = "cboEventID";
-            this.cboEventID.Size = new System.Drawing.Size(67, 31);
+            this.cboEventID.Size = new System.Drawing.Size(67, 27);
             this.cboEventID.TabIndex = 40;
             // 
             // cboEventName
@@ -377,7 +377,7 @@ namespace esport_leauge
             this.cboEventName.Location = new System.Drawing.Point(217, 180);
             this.cboEventName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboEventName.Name = "cboEventName";
-            this.cboEventName.Size = new System.Drawing.Size(221, 31);
+            this.cboEventName.Size = new System.Drawing.Size(221, 27);
             this.cboEventName.TabIndex = 41;
             // 
             // txtCapacity
@@ -385,8 +385,13 @@ namespace esport_leauge
             this.txtCapacity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapacity.Location = new System.Drawing.Point(217, 334);
             this.txtCapacity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCapacity.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.txtCapacity.Name = "txtCapacity";
-            this.txtCapacity.Size = new System.Drawing.Size(120, 30);
+            this.txtCapacity.Size = new System.Drawing.Size(120, 26);
             this.txtCapacity.TabIndex = 61;
             // 
             // label7
@@ -395,7 +400,7 @@ namespace esport_leauge
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(71, 231);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 23);
+            this.label7.Size = new System.Drawing.Size(74, 19);
             this.label7.TabIndex = 62;
             this.label7.Text = "Start Time:";
             // 
@@ -407,7 +412,7 @@ namespace esport_leauge
             this.txtStartTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStartTime.Name = "txtStartTime";
             this.txtStartTime.ShowUpDown = true;
-            this.txtStartTime.Size = new System.Drawing.Size(173, 30);
+            this.txtStartTime.Size = new System.Drawing.Size(173, 26);
             this.txtStartTime.TabIndex = 64;
             // 
             // cboStatus
@@ -422,7 +427,7 @@ namespace esport_leauge
             this.cboStatus.Location = new System.Drawing.Point(217, 281);
             this.cboStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(173, 31);
+            this.cboStatus.Size = new System.Drawing.Size(173, 27);
             this.cboStatus.TabIndex = 65;
             // 
             // grpChallenge
@@ -469,7 +474,7 @@ namespace esport_leauge
             this.pnlAddChallenge.Controls.Add(this.label10);
             this.pnlAddChallenge.Controls.Add(this.label11);
             this.pnlAddChallenge.Location = new System.Drawing.Point(859, 26);
-            this.pnlAddChallenge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAddChallenge.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAddChallenge.Name = "pnlAddChallenge";
             this.pnlAddChallenge.Size = new System.Drawing.Size(524, 468);
             this.pnlAddChallenge.TabIndex = 67;
@@ -487,7 +492,7 @@ namespace esport_leauge
             this.cboNewStatus.Location = new System.Drawing.Point(204, 255);
             this.cboNewStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewStatus.Name = "cboNewStatus";
-            this.cboNewStatus.Size = new System.Drawing.Size(173, 31);
+            this.cboNewStatus.Size = new System.Drawing.Size(173, 27);
             this.cboNewStatus.TabIndex = 79;
             // 
             // label1
@@ -496,7 +501,7 @@ namespace esport_leauge
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 23);
+            this.label1.Size = new System.Drawing.Size(112, 19);
             this.label1.TabIndex = 66;
             this.label1.Text = "Challenge Name:";
             // 
@@ -544,7 +549,7 @@ namespace esport_leauge
             this.txtNewStartTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewStartTime.Name = "txtNewStartTime";
             this.txtNewStartTime.ShowUpDown = true;
-            this.txtNewStartTime.Size = new System.Drawing.Size(173, 30);
+            this.txtNewStartTime.Size = new System.Drawing.Size(173, 26);
             this.txtNewStartTime.TabIndex = 78;
             // 
             // label3
@@ -553,7 +558,7 @@ namespace esport_leauge
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(67, 206);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 23);
+            this.label3.Size = new System.Drawing.Size(74, 19);
             this.label3.TabIndex = 77;
             this.label3.Text = "Start Time:";
             // 
@@ -563,7 +568,7 @@ namespace esport_leauge
             this.txtNewChallengeName.Location = new System.Drawing.Point(204, 54);
             this.txtNewChallengeName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewChallengeName.Name = "txtNewChallengeName";
-            this.txtNewChallengeName.Size = new System.Drawing.Size(223, 30);
+            this.txtNewChallengeName.Size = new System.Drawing.Size(223, 26);
             this.txtNewChallengeName.TabIndex = 67;
             // 
             // txtNewCapacity
@@ -572,7 +577,7 @@ namespace esport_leauge
             this.txtNewCapacity.Location = new System.Drawing.Point(204, 308);
             this.txtNewCapacity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewCapacity.Name = "txtNewCapacity";
-            this.txtNewCapacity.Size = new System.Drawing.Size(120, 30);
+            this.txtNewCapacity.Size = new System.Drawing.Size(120, 26);
             this.txtNewCapacity.TabIndex = 76;
             // 
             // label8
@@ -581,7 +586,7 @@ namespace esport_leauge
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(84, 103);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 23);
+            this.label8.Size = new System.Drawing.Size(64, 19);
             this.label8.TabIndex = 68;
             this.label8.Text = "Event ID:";
             // 
@@ -593,7 +598,7 @@ namespace esport_leauge
             this.cboNewEventName.Location = new System.Drawing.Point(204, 154);
             this.cboNewEventName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewEventName.Name = "cboNewEventName";
-            this.cboNewEventName.Size = new System.Drawing.Size(221, 31);
+            this.cboNewEventName.Size = new System.Drawing.Size(221, 27);
             this.cboNewEventName.TabIndex = 75;
             // 
             // label9
@@ -602,7 +607,7 @@ namespace esport_leauge
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(43, 158);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 23);
+            this.label9.Size = new System.Drawing.Size(86, 19);
             this.label9.TabIndex = 69;
             this.label9.Text = "Event Name:";
             // 
@@ -614,7 +619,7 @@ namespace esport_leauge
             this.cboNewEventID.Location = new System.Drawing.Point(204, 100);
             this.cboNewEventID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewEventID.Name = "cboNewEventID";
-            this.cboNewEventID.Size = new System.Drawing.Size(67, 31);
+            this.cboNewEventID.Size = new System.Drawing.Size(67, 27);
             this.cboNewEventID.TabIndex = 74;
             // 
             // label10
@@ -623,7 +628,7 @@ namespace esport_leauge
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(105, 258);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 23);
+            this.label10.Size = new System.Drawing.Size(50, 19);
             this.label10.TabIndex = 70;
             this.label10.Text = "Status:";
             // 
@@ -633,7 +638,7 @@ namespace esport_leauge
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(80, 310);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 23);
+            this.label11.Size = new System.Drawing.Size(64, 19);
             this.label11.TabIndex = 71;
             this.label11.Text = "Capacity:";
             // 

@@ -120,7 +120,7 @@ namespace esport_leauge
             //check for email validity
             Regex exp = new Regex(@"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
 
-            if (exp.IsMatch(txtNewEmail.Text))
+            if (exp.IsMatch(txtEmail.Text))
             {
                 handleUpdateData();
             }
@@ -216,6 +216,28 @@ namespace esport_leauge
                 {
                     MessageBox.Show("You must type in a all fields", "Error");
                 }
+                else if (Int32.TryParse(txtUserName.Text, out int val1))
+                {
+                    MessageBox.Show("Numeric value is not allowed on UserName");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtFirstName.Text, out int val2))
+                {
+                    MessageBox.Show("Numeric value is not allowed on FirstName");
+                    currencyManager.CancelCurrentEdit();
+                }
+                else if (Int32.TryParse(txtLastName.Text, out int val3))
+                {
+                    MessageBox.Show("Numeric value is not allowed on LastName");
+                    currencyManager.CancelCurrentEdit();
+                }
+                
+                else if (Int32.TryParse(txtEmail.Text, out int val5))
+                {
+                    MessageBox.Show("Numeric value is not allowed on Email");
+                    currencyManager.CancelCurrentEdit();
+                }
+                
                 else
                 {
                     updateCompetitorRow["UserName"] = txtUserName.Text;

@@ -156,6 +156,10 @@ namespace esport_leauge
                     MessageBox.Show("Numeric value is not allowed on status");
                     currencyManager.CancelCurrentEdit();
                 }
+                else if (!(txtNewCapacity.Value > 100 && txtNewCapacity.Value < 5000))
+                {
+                    MessageBox.Show("Please enter value between 100 to 5000");
+                }
                 else
                 {
                     neEventRow["EventName"] = txtNewEventName.Text;
@@ -205,6 +209,12 @@ namespace esport_leauge
                 {
                     currencyManager.CancelCurrentEdit();
                     MessageBox.Show("Numeric value is not allowed on status");
+                }
+                else if (!(txtCapacity.Value > 100 && txtNewCapacity.Value < 5000))
+                {
+                    currencyManager.CancelCurrentEdit();
+                    MessageBox.Show("Please enter value between 100 to 5000");
+                   
                 }
                 else
                 {
