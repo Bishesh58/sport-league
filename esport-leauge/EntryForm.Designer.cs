@@ -56,6 +56,8 @@ namespace esport_leauge
             // 
             // dgvCompetitor
             // 
+            this.dgvCompetitor.AllowUserToAddRows = false;
+            this.dgvCompetitor.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Lavender;
             this.dgvCompetitor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCompetitor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -165,6 +167,8 @@ namespace esport_leauge
             // 
             // dgvChallenge
             // 
+            this.dgvChallenge.AllowUserToAddRows = false;
+            this.dgvChallenge.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Lavender;
             this.dgvChallenge.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvChallenge.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -206,6 +210,8 @@ namespace esport_leauge
             // 
             // dgvEntry
             // 
+            this.dgvEntry.AllowUserToAddRows = false;
+            this.dgvEntry.AllowUserToDeleteRows = false;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.Lavender;
             this.dgvEntry.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvEntry.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

@@ -45,6 +45,11 @@ namespace esport_leauge
 
             dgvEntry.DataSource = DM.DSnzesl;
             dgvEntry.DataMember = "Entry";
+
+            //dropdown list status
+            cboTxtStatus.DataSource = DM.DSnzesl;
+            cboTxtStatus.DisplayMember = "Challenge.Status";
+            cboTxtStatus.ValueMember = "Challenge.Status";
         }
 
         private void btnAddEntry_Click(object sender, EventArgs e)

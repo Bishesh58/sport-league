@@ -39,12 +39,11 @@ namespace esport_leauge
             cmArena = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Arena"];
             cmEvent = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Event"];
             cmChallenge = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Challenge"];
-            cmCompetitor = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Competitor"];
-            cmEntry = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Entry"];
+          
 
             foreach(DataRow drEvent in DM.dtEvent.Rows)
             {
-                //get arena form event record
+                //get arena for event 
                 int aID = Convert.ToInt32(drEvent["ArenaID"].ToString());
                 cmArena.Position = DM.ArenaView.Find(aID);
                 DataRow drArena = DM.dtArena.Rows[cmArena.Position];
@@ -56,9 +55,10 @@ namespace esport_leauge
                 eventDetails += drArena["Suburb"] + "\r\n";
                 eventDetails += drArena["City"] + "\r\n\r\n";
                 eventDetails += "Event Date: " + drEvent["EventDate"] + "\r\n\r\n";
+                
                 eventDetails +="Challenges:" + "\r\n\r\n";
-
-                eventDetails += "ID\t\t" + "Name\t\t\t" + "Time\t\t\r\n";
+               
+                
 
                 //get challenges
                 int aChallengeID = Convert.ToInt32(drEvent["EventID"].ToString());
@@ -70,6 +70,7 @@ namespace esport_leauge
                 
                 if(drChallenges.Length > 0)
                 {
+                    eventDetails += "ID\t\t" + "Name\t\t\t" + "Time\t\t\r\n";
                     foreach (DataRow drEventChallenge in drChallenges)
                     {
                         int chID = Convert.ToInt32(drEventChallenge["ChallengeID"].ToString());
@@ -79,11 +80,14 @@ namespace esport_leauge
                         eventDetails += "" + drchallenge["ChallengeID"] + "\t\t" + drchallenge["ChallengeName"] + "\t\t" + drchallenge["StartTime"] + "\r\n";
                        
                     }
-                    txtReport.Text += eventDetails;
+                   eventDetails += "\r\n\r\n\r\n";
+                   eventDetails += "\r\n\r\n\r\n";
+                   eventDetails += "\r\n\r\n\r\n";
                 }
-               txtReport.Text += "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
-
             }
+            txtReport.Text += eventDetails;
+            txtReport.Text += "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+
 
         }
 

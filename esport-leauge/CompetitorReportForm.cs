@@ -71,13 +71,16 @@ namespace esport_leauge
                         DataRow drEnt = DM.dtChallenge.Rows[cmEntry.Position];
 
                         competitorDetails += "" + drEnt["ChallengeID"] + "\t\t" + drEnt["ChallengeName"] + "\t\t\t" + drEnt["StartTime"] + "\r\n\r\n\r\n";
-
                     }
-                    txtReportComp.Text += competitorDetails;
+                    competitorDetails += "\r\n\r\n\r\n";
+                    competitorDetails += "\r\n\r\n\r\n";
+                    competitorDetails += "\r\n\r\n\r\n";
                 }
-
-                txtReportComp.Text += "\r\n\r\n\r\n\r\n";
+               
             }
+            txtReportComp.Text += competitorDetails;
+            txtReportComp.Text += "\r\n\r\n\r\n\r\n";
+
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
