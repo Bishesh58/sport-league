@@ -77,15 +77,23 @@ namespace esport_leauge
 
             if (eventRow.Length != 0)
             {
-                MessageBox.Show("You may only delete Arena that has events", "Error");
+                MessageBox.Show("You may only delete Arena that has no events", "Error");
             }
             else
             {
+                
+                
                 if (MessageBox.Show("Are you sure you want to delete this record?", "Warning",
                MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
+                    
                     deleteArenaRow.Delete();
+                   
                     DM.updateArena();
+
+                   
+                    //cmEntry.Position = DM.EntryView.Find(aEntID);
+
                     MessageBox.Show("Arena deleted Successfully");
                 }
             }
@@ -106,7 +114,7 @@ namespace esport_leauge
             }
             else
             {
-                MessageBox.Show("Invalid phone number, please enter like: 000-0000");
+                MessageBox.Show("Invalid phone number, please enter like: 123-4567");
                 currencyManager.CancelCurrentEdit();
             }
            
@@ -120,13 +128,13 @@ namespace esport_leauge
 
             Regex exp = new Regex(@"\d{3}-\d{4}");
 
-            if (exp.IsMatch(txtNewPhoneNumber.Text))
+            if (exp.IsMatch(txtPhoneNumber.Text))
             {
                 handleUpdateData();
             }
             else
             {
-                MessageBox.Show("Invalid phone number, please enter like: 000-0000");
+                MessageBox.Show("Invalid phone number, please enter like: 123-4567");
                 currencyManager.CancelCurrentEdit();
             }
             
@@ -144,7 +152,7 @@ namespace esport_leauge
                 if ((txtNewArenaName.Text == "") || (txtNewStreetAddress.Text == "") || (txtNewSuburb.Text == "") ||
                                (cboNewTxtCity.Text == "") || (txtNewPhoneNumber.Text == ""))
                 {
-                    MessageBox.Show("You must type in a all fields", "Error");
+                    MessageBox.Show("You must type in all fields", "Error");
                     currencyManager.CancelCurrentEdit();
                 }
                 else if (Int32.TryParse(txtNewArenaName.Text, out int val1))

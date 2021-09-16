@@ -15,7 +15,7 @@ namespace esport_leauge
         private DataModule DM;
         private MainForm mf;
         private CurrencyManager currencyManager;
-       
+        private CurrencyManager cmEntry;
         public ChallengeForm(DataModule dm, MainForm mnu)
         {
             InitializeComponent();
@@ -257,12 +257,51 @@ namespace esport_leauge
         //btn complete
         private void btnComplete_Click(object sender, EventArgs e)
         {
+            DataRow challengeRowToComplete = DM.dtChallenge.Rows[currencyManager.Position];
+            string arenaStatus = challengeRowToComplete["Status"].ToString();
 
+            //cmEntry.Position = DM.EntryView.Find(aChallengeID);
+           //DataRow drEntry = DM.dtEntry.Rows[cmEntry.Position];
+
+            if (arenaStatus.Equals("Finished") == true)
+            {
+                challengeRowToComplete["Status"] = "Completed";
+                DM.updateChallenge();
+
+                int aChallengeID = Convert.ToInt32(challengeRowToComplete["ChallengeID"].ToString());
+                cmEntry = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Entry"];
+               
+                foreach (DataRow drEntry in DM.dtEntry.Rows)
+                {
+                    cmEntry.Position = DM.EntryView.Find(aChallengeID);
+                    DataRow drEnt = DM.dtEntry.Rows[cmEntry.Position];
+                    drEnt.Delete();
+                }
+                DM.updateEntry();
+                MessageBox.Show("Challenge marked as Completed");
+            }
+            else
+            {
+                MessageBox.Show("Only finished challenges can be marked as completed");
+            }
         }
         //btn finished
         private void btnFinished_Click(object sender, EventArgs e)
         {
+            DataRow challengeRowToFinish = DM.dtChallenge.Rows[currencyManager.Position];
+            string arenaStatus = challengeRowToFinish["Status"].ToString();
+            if (arenaStatus.Equals("Scheduled") == true)
+            {
+                challengeRowToFinish["Status"] = "Finished";
+                DM.updateChallenge();
 
+                MessageBox.Show("Challenge marked as finished");
+            }
+            else
+            {
+                MessageBox.Show("Only scheduled challenges can be marked as Finished!");
+            }
+           
         }
 
         private void clearField()

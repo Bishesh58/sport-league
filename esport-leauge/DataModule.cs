@@ -86,8 +86,8 @@ namespace esport_leauge
         {
             int newID = 0;
             OleDbCommand idCMD = new OleDbCommand("SELECT @@IDENTITY", dbConnection);
-            if(e.StatementType == StatementType.Insert) 
-            { 
+            if (e.StatementType == StatementType.Insert)
+            {
                 newID = (int)idCMD.ExecuteScalar();
                 e.Row["ArenaID"] = newID;
             }
