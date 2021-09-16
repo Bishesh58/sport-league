@@ -268,15 +268,20 @@ namespace esport_leauge
                 challengeRowToComplete["Status"] = "Completed";
                 DM.updateChallenge();
 
-                int aChallengeID = Convert.ToInt32(challengeRowToComplete["ChallengeID"].ToString());
                 cmEntry = (CurrencyManager)this.BindingContext[DM.DSnzesl, "Entry"];
-               
-                foreach (DataRow drEntry in DM.dtEntry.Rows)
+                int aChallengeID = Convert.ToInt32(challengeRowToComplete["ChallengeID"].ToString());
+                cmEntry.Position = DM.EntryView.Find(aChallengeID);
+                DataRow drEnt = DM.dtEntry.Rows[cmEntry.Position];
+
+                DataRow[] drEntries = challengeRowToComplete.GetChildRows(DM.dtChallenge.ChildRelations["FK_CHALLENGE_ENTRY"]);
+                if(drEntries.Length > 0)
                 {
-                    cmEntry.Position = DM.EntryView.Find(aChallengeID);
-                    DataRow drEnt = DM.dtEntry.Rows[cmEntry.Position];
-                    drEnt.Delete();
+                    foreach (DataRow drE in drEntries)
+                    {
+                        drE.Delete();
+                    }
                 }
+                
                 DM.updateEntry();
                 MessageBox.Show("Challenge marked as Completed");
             }
