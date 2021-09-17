@@ -83,7 +83,7 @@ namespace esport_leauge
             this.txtDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtDateOfBirth.Location = new System.Drawing.Point(172, 290);
             this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.Size = new System.Drawing.Size(173, 30);
+            this.txtDateOfBirth.Size = new System.Drawing.Size(173, 26);
             this.txtDateOfBirth.TabIndex = 81;
             // 
             // label7
@@ -92,7 +92,7 @@ namespace esport_leauge
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(86, 351);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 23);
+            this.label7.Size = new System.Drawing.Size(44, 19);
             this.label7.TabIndex = 76;
             this.label7.Text = "Email:";
             // 
@@ -167,7 +167,7 @@ namespace esport_leauge
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(54, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 23);
+            this.label4.Size = new System.Drawing.Size(77, 19);
             this.label4.TabIndex = 69;
             this.label4.Text = "Last Name:";
             // 
@@ -176,7 +176,7 @@ namespace esport_leauge
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.Location = new System.Drawing.Point(172, 80);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(222, 30);
+            this.txtUserName.Size = new System.Drawing.Size(222, 26);
             this.txtUserName.TabIndex = 67;
             // 
             // txtCompetitorID
@@ -184,7 +184,7 @@ namespace esport_leauge
             this.txtCompetitorID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompetitorID.Location = new System.Drawing.Point(172, 32);
             this.txtCompetitorID.Name = "txtCompetitorID";
-            this.txtCompetitorID.Size = new System.Drawing.Size(67, 30);
+            this.txtCompetitorID.Size = new System.Drawing.Size(67, 26);
             this.txtCompetitorID.TabIndex = 65;
             // 
             // pnlList
@@ -201,7 +201,7 @@ namespace esport_leauge
             this.lstCompetitor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstCompetitor.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.lstCompetitor.FormattingEnabled = true;
-            this.lstCompetitor.ItemHeight = 23;
+            this.lstCompetitor.ItemHeight = 19;
             this.lstCompetitor.Location = new System.Drawing.Point(0, 0);
             this.lstCompetitor.Name = "lstCompetitor";
             this.lstCompetitor.Size = new System.Drawing.Size(285, 548);
@@ -265,7 +265,7 @@ namespace esport_leauge
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(38, 296);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 23);
+            this.label6.Size = new System.Drawing.Size(90, 19);
             this.label6.TabIndex = 71;
             this.label6.Text = "Date of Birth:";
             // 
@@ -275,7 +275,7 @@ namespace esport_leauge
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(79, 242);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 23);
+            this.label5.Size = new System.Drawing.Size(57, 19);
             this.label5.TabIndex = 70;
             this.label5.Text = "Gender:";
             // 
@@ -285,7 +285,7 @@ namespace esport_leauge
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 23);
+            this.label2.Size = new System.Drawing.Size(80, 19);
             this.label2.TabIndex = 66;
             this.label2.Text = "User Name:";
             // 
@@ -295,7 +295,7 @@ namespace esport_leauge
             this.lblCompetitor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompetitor.Location = new System.Drawing.Point(26, 35);
             this.lblCompetitor.Name = "lblCompetitor";
-            this.lblCompetitor.Size = new System.Drawing.Size(123, 23);
+            this.lblCompetitor.Size = new System.Drawing.Size(100, 19);
             this.lblCompetitor.TabIndex = 64;
             this.lblCompetitor.Text = "Competitor ID:";
             // 
@@ -305,7 +305,7 @@ namespace esport_leauge
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(45, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 23);
+            this.label3.Size = new System.Drawing.Size(78, 19);
             this.label3.TabIndex = 68;
             this.label3.Text = "First Name:";
             // 
@@ -331,7 +331,7 @@ namespace esport_leauge
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(172, 344);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(344, 30);
+            this.txtEmail.Size = new System.Drawing.Size(344, 26);
             this.txtEmail.TabIndex = 82;
             // 
             // txtFirstName
@@ -339,7 +339,7 @@ namespace esport_leauge
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(172, 128);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(222, 30);
+            this.txtFirstName.Size = new System.Drawing.Size(222, 26);
             this.txtFirstName.TabIndex = 83;
             // 
             // txtLastName
@@ -347,7 +347,7 @@ namespace esport_leauge
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Location = new System.Drawing.Point(172, 183);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(222, 30);
+            this.txtLastName.Size = new System.Drawing.Size(222, 26);
             this.txtLastName.TabIndex = 84;
             // 
             // grpCompetitor
@@ -387,7 +387,7 @@ namespace esport_leauge
             this.cboTextGender.Location = new System.Drawing.Point(172, 239);
             this.cboTextGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTextGender.Name = "cboTextGender";
-            this.cboTextGender.Size = new System.Drawing.Size(112, 31);
+            this.cboTextGender.Size = new System.Drawing.Size(112, 27);
             this.cboTextGender.TabIndex = 75;
             // 
             // pnlAddCompetitor
@@ -410,6 +410,7 @@ namespace esport_leauge
             this.pnlAddCompetitor.Name = "pnlAddCompetitor";
             this.pnlAddCompetitor.Size = new System.Drawing.Size(531, 477);
             this.pnlAddCompetitor.TabIndex = 74;
+            this.pnlAddCompetitor.Visible = false;
             // 
             // cboNewTextGender
             // 
@@ -423,7 +424,7 @@ namespace esport_leauge
             this.cboNewTextGender.Location = new System.Drawing.Point(160, 205);
             this.cboNewTextGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboNewTextGender.Name = "cboNewTextGender";
-            this.cboNewTextGender.Size = new System.Drawing.Size(112, 31);
+            this.cboNewTextGender.Size = new System.Drawing.Size(112, 27);
             this.cboNewTextGender.TabIndex = 85;
             // 
             // txtNewUserName
@@ -431,7 +432,7 @@ namespace esport_leauge
             this.txtNewUserName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewUserName.Location = new System.Drawing.Point(160, 46);
             this.txtNewUserName.Name = "txtNewUserName";
-            this.txtNewUserName.Size = new System.Drawing.Size(222, 30);
+            this.txtNewUserName.Size = new System.Drawing.Size(222, 26);
             this.txtNewUserName.TabIndex = 89;
             // 
             // label1
@@ -440,7 +441,7 @@ namespace esport_leauge
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(33, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 23);
+            this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 90;
             this.label1.Text = "First Name:";
             // 
@@ -449,7 +450,7 @@ namespace esport_leauge
             this.txtNewLastName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewLastName.Location = new System.Drawing.Point(160, 149);
             this.txtNewLastName.Name = "txtNewLastName";
-            this.txtNewLastName.Size = new System.Drawing.Size(222, 30);
+            this.txtNewLastName.Size = new System.Drawing.Size(222, 26);
             this.txtNewLastName.TabIndex = 100;
             // 
             // label8
@@ -458,7 +459,7 @@ namespace esport_leauge
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(30, 49);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 23);
+            this.label8.Size = new System.Drawing.Size(80, 19);
             this.label8.TabIndex = 88;
             this.label8.Text = "User Name:";
             // 
@@ -467,7 +468,7 @@ namespace esport_leauge
             this.txtNewFirstName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewFirstName.Location = new System.Drawing.Point(160, 94);
             this.txtNewFirstName.Name = "txtNewFirstName";
-            this.txtNewFirstName.Size = new System.Drawing.Size(222, 30);
+            this.txtNewFirstName.Size = new System.Drawing.Size(222, 26);
             this.txtNewFirstName.TabIndex = 99;
             // 
             // label9
@@ -476,7 +477,7 @@ namespace esport_leauge
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(67, 208);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 23);
+            this.label9.Size = new System.Drawing.Size(57, 19);
             this.label9.TabIndex = 92;
             this.label9.Text = "Gender:";
             // 
@@ -485,7 +486,7 @@ namespace esport_leauge
             this.txtNewEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewEmail.Location = new System.Drawing.Point(160, 310);
             this.txtNewEmail.Name = "txtNewEmail";
-            this.txtNewEmail.Size = new System.Drawing.Size(344, 30);
+            this.txtNewEmail.Size = new System.Drawing.Size(344, 26);
             this.txtNewEmail.TabIndex = 98;
             // 
             // label10
@@ -494,7 +495,7 @@ namespace esport_leauge
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(26, 262);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 23);
+            this.label10.Size = new System.Drawing.Size(90, 19);
             this.label10.TabIndex = 93;
             this.label10.Text = "Date of Birth:";
             // 
@@ -504,7 +505,7 @@ namespace esport_leauge
             this.txtNewDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtNewDateOfBirth.Location = new System.Drawing.Point(160, 256);
             this.txtNewDateOfBirth.Name = "txtNewDateOfBirth";
-            this.txtNewDateOfBirth.Size = new System.Drawing.Size(173, 30);
+            this.txtNewDateOfBirth.Size = new System.Drawing.Size(173, 26);
             this.txtNewDateOfBirth.TabIndex = 97;
             // 
             // btnSaveCompetitor
@@ -530,7 +531,7 @@ namespace esport_leauge
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(74, 317);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 23);
+            this.label11.Size = new System.Drawing.Size(44, 19);
             this.label11.TabIndex = 96;
             this.label11.Text = "Email:";
             // 
@@ -557,7 +558,7 @@ namespace esport_leauge
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(42, 152);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 23);
+            this.label12.Size = new System.Drawing.Size(77, 19);
             this.label12.TabIndex = 91;
             this.label12.Text = "Last Name:";
             // 

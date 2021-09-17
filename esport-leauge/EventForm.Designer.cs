@@ -637,7 +637,7 @@ namespace esport_leauge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1377, 1017);
+            this.ClientSize = new System.Drawing.Size(1721, 1271);
             this.Controls.Add(this.pnlAddEvent);
             this.Controls.Add(this.grpEvent);
             this.Controls.Add(this.btnDelete);

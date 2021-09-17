@@ -23,6 +23,16 @@ namespace esport_leauge
                 "\nClick hold and drag on top banner bar to move form around!" +
                 "\nEach buttons will take to their respective forms," +
                 "\nHover over numberic textbox to see tooltip";
+
+            timer1.Start();
+
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblDate.Text = DateTime.Now.ToLongDateString();
+            lblTime.Text = DateTime.Now.ToLongTimeString();
+        }
+
     }
 }
