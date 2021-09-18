@@ -162,12 +162,12 @@ namespace esport_leauge
                 }
                 else if (Int32.TryParse(txtNewChallengeName.Text, out int val1))
                 {
-                    MessageBox.Show("Numeric value is not allowed on UserName");
+                    MessageBox.Show("Numeric value is not allowed on Challenge Name");
                     currencyManager.CancelCurrentEdit();
                 }
                 else if (!(txtNewCapacity.Value > 1 && txtNewCapacity.Value < 40))
                 {
-                    MessageBox.Show("Please enter value between 1 to 40");
+                    MessageBox.Show("Please enter capacity between 1 to 40");
                 }
                 
                 else
@@ -212,13 +212,13 @@ namespace esport_leauge
                 }
                 else if (!(txtCapacity.Value > 1 && txtNewCapacity.Value < 40))
                 {
-                    MessageBox.Show("Please enter value between 1 to 40");
+                    MessageBox.Show("Please enter capacity between 1 to 40");
                 }
                 else
                 {
                     updateChallengeRow["ChallengeName"] = txtChallengeName.Text;
                     updateChallengeRow["StartTime"] = txtStartTime.Text;
-                    updateChallengeRow["Capacity"] = Convert.ToDouble(txtNewCapacity.Text);
+                    updateChallengeRow["Capacity"] = Convert.ToDouble(txtCapacity.Text);
                    
                     DM.updateChallenge();
                     MessageBox.Show("Challenge updated successfully", "Success");
